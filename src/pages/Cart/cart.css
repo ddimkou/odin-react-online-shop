@@ -1,0 +1,113 @@
+.cart-content {
+  background: linear-gradient(
+    360deg,
+    #493c2c46,
+    #aa783b57,
+    #695032c5,
+    #493c2ce1
+  );
+  min-height: 89vh;
+}
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+.cart-container h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cart-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.cart-card h3 {
+  font-size: 1rem;
+}
+
+.itemImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.functionality {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.increment,
+.decrement {
+  background-color: #2c2c2c;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  padding: 3px 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.increment:hover,
+.decrement:hover {
+  background-color: #5e5d5d;
+}
+
+.functionality .quantity {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 0 5px;
+}
+.total-price {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.apply-order {
+  background-color: #2c2c2c;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 1.5rem auto 5rem;
+  padding: 10px 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.apply-order:hover {
+  background-color: #5e5d5d;
+}
+
+.apply-order.done {
+  background-color: #4caf50;
+}
